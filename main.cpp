@@ -13,8 +13,13 @@
 #include "Navegador.h"
 #include "Seguridad.h"
 #include "Social.h"
-
 using namespace std;
+
+void llenarAmigos(vector<Usuario*> listaUsuarios,Usuario* u, string amigo){
+    Social* s= dynamic_cast<Social*>(u->getSoftware("Facebook"));
+    s->añadirAmigo(listaUsuarios,amigo,u);
+}
+
 static void SoftwareOfimatica(Ofimatica* of){
     string opcion;
     while(true){
@@ -490,22 +495,26 @@ int main(){
     listaSoftware.push_back(social1);
     listaSoftware.push_back(social2);
 
+    
     //miniom 2 amigos por usuario
-    admin->agregarSoftware(social1);
-    n1->agregarSoftware(social1);
-    n2->agregarSoftware(social1);
-    n3->agregarSoftware(social1);
-    n4->agregarSoftware(social1);
-    normal1->agregarSoftware(social1);
-    normal2->agregarSoftware(social1);
-    normal3->agregarSoftware(social1);
-    normal4->agregarSoftware(social1);
-    normal5->agregarSoftware(social1);
-    normal6->agregarSoftware(social1);
-    normal7->agregarSoftware(social1);
-    normal8->agregarSoftware(social1);
-    normal9->agregarSoftware(social1);
-    normal10->agregarSoftware(social1);
+    //admin->agregarSoftware(social1);
+    //llenarAmigos(listaUsuarios,admin,"Carlos");
+    //Social* s1=dynamic_cast<Social*>(admin->getSoftware("Facebook"));
+    //s1->añadirAmigo(listaUsuarios,n1->getNombre(),admin);
+    //n1->agregarSoftware(social1);
+    //n2->agregarSoftware(social1);
+    //n3->agregarSoftware(social1);
+    //n4->agregarSoftware(social1);
+    //normal1->agregarSoftware(social1);
+    //normal2->agregarSoftware(social1);
+    //normal3->agregarSoftware(social1);
+    //normal4->agregarSoftware(social1);
+    //normal5->agregarSoftware(social1);
+    //normal6->agregarSoftware(social1);
+    //normal7->agregarSoftware(social1);
+    //normal8->agregarSoftware(social1);
+    //normal9->agregarSoftware(social1);
+    //normal10->agregarSoftware(social1);
 
 
 
