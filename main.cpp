@@ -490,6 +490,26 @@ int main(){
     listaSoftware.push_back(social1);
     listaSoftware.push_back(social2);
 
+    //miniom 2 amigos por usuario
+    admin->agregarSoftware(social1);
+    n1->agregarSoftware(social1);
+    n2->agregarSoftware(social1);
+    n3->agregarSoftware(social1);
+    n4->agregarSoftware(social1);
+    normal1->agregarSoftware(social1);
+    normal2->agregarSoftware(social1);
+    normal3->agregarSoftware(social1);
+    normal4->agregarSoftware(social1);
+    normal5->agregarSoftware(social1);
+    normal6->agregarSoftware(social1);
+    normal7->agregarSoftware(social1);
+    normal8->agregarSoftware(social1);
+    normal9->agregarSoftware(social1);
+    normal10->agregarSoftware(social1);
+
+
+
+
 
 
 
