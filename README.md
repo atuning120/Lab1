@@ -1,4 +1,11 @@
 # Lab1
+
+*******IMPORTANTE*******
+Para ejecutar el programa, hay que escribir las siguientes lineas de codigo una despues de otra en la terminal de VSCode:
+g++ -o main main.cpp
+./main.exe
+***********************
+
 //ADMINISTRADOR
 Usuario* admin= new Administrador("cristian","estructura",20,"cristian.nunez@alumnos.ucn.cl");
 
